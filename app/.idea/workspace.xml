@@ -29,61 +29,38 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/res/layout/activity_main3.xml">
-          <provider selected="true" editor-type-id="android-designer2" />
-          <provider editor-type-id="text-editor">
-            <state relative-caret-position="855">
-              <caret line="57" selection-start-line="57" selection-end-line="57" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/res/layout/activity_main2.xml">
           <provider selected="true" editor-type-id="android-designer2" />
           <provider editor-type-id="text-editor">
-            <state relative-caret-position="1560">
-              <caret line="104" column="36" selection-start-line="104" selection-start-column="36" selection-end-line="104" selection-end-column="36" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/build.gradle">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="480">
-              <caret line="32" selection-start-line="32" selection-end-line="32" />
+            <state relative-caret-position="450">
+              <caret line="30" column="33" selection-start-line="30" selection-start-column="29" selection-end-line="30" selection-end-column="43" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/build.gradle">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="135">
+              <caret line="9" column="21" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/app/centrolactancia/tete/MainActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="351" column="7" selection-start-line="351" selection-start-column="7" selection-end-line="351" selection-end-column="7" />
-              <folding>
-                <element signature="e#2460#2734#0" expanded="true" />
-                <element signature="e#2733#2734#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="555">
+              <caret line="237" column="59" selection-start-line="237" selection-start-column="58" selection-end-line="237" selection-end-column="66" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/app/centrolactancia/tete/Task1.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/app/centrolactancia/tete/Main2Activity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" column="15" selection-start-line="3" selection-start-column="11" selection-end-line="3" selection-end-column="15" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/app/centrolactancia/tete/UnToast.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" column="15" selection-start-line="3" selection-start-column="11" selection-end-line="3" selection-end-column="15" />
+            <state relative-caret-position="225">
+              <caret line="258" selection-start-line="258" selection-end-line="258" />
             </state>
           </provider>
         </entry>
@@ -92,7 +69,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/res/layout/activity_main.xml">
           <provider selected="true" editor-type-id="android-designer2" />
           <provider editor-type-id="text-editor">
-            <state relative-caret-position="300">
+            <state relative-caret-position="840">
               <caret line="56" column="44" selection-start-line="56" selection-start-column="29" selection-end-line="56" selection-end-column="44" />
             </state>
           </provider>
@@ -120,36 +97,35 @@
         <option value="$PROJECT_DIR$/src/androidTest/java/app/centrolactancia/tete/ExampleInstrumentedTest.java" />
         <option value="$PROJECT_DIR$/build/generated/source/buildConfig/androidTest/debug/app/centrolactancia/tete/test/BuildConfig.java" />
         <option value="$PROJECT_DIR$/build/generated/source/buildConfig/debug/com/example/tete/BuildConfig.java" />
-        <option value="$PROJECT_DIR$/src/main/java/app/centrolactancia/tete/Main2Activity.java" />
         <option value="$PROJECT_DIR$/src/main/java/app/centrolactancia/tete/MapsActivity.java" />
         <option value="$PROJECT_DIR$/src/main/res/layout/activity_maps.xml" />
         <option value="$PROJECT_DIR$/src/main/java/app/centrolactancia/tete/Main4Activity.java" />
         <option value="$PROJECT_DIR$/src/main/java/app/centrolactancia/tete/Main3Activity.java" />
-        <option value="$PROJECT_DIR$/src/main/res/layout/activity_main2.xml" />
         <option value="$PROJECT_DIR$/src/main/res/layout/activity_main3.xml" />
-        <option value="$PROJECT_DIR$/build.gradle" />
         <option value="$PROJECT_DIR$/src/main/res/layout/activity_main4.xml" />
         <option value="$PROJECT_DIR$/src/main/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/src/main/java/app/centrolactancia/tete/Task1.java" />
         <option value="$PROJECT_DIR$/src/main/java/app/centrolactancia/tete/UnToast.java" />
         <option value="$PROJECT_DIR$/src/main/res/layout/activity_main.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/app/centrolactancia/tete/HTTPAsyncTask.java" />
+        <option value="$PROJECT_DIR$/src/main/res/layout/activity_main2.xml" />
         <option value="$PROJECT_DIR$/src/main/java/app/centrolactancia/tete/MainActivity.java" />
+        <option value="$PROJECT_DIR$/src/main/java/app/centrolactancia/tete/Main2Activity.java" />
+        <option value="$PROJECT_DIR$/build.gradle" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="4">
-    <option name="x" value="1001" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="83" />
     <option name="y" value="25" />
     <option name="width" value="919" />
-    <option name="height" value="1055" />
+    <option name="height" value="1053" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="ProjectPane" />
       <pane id="AndroidView">
         <subPane>
           <expand>
@@ -160,53 +136,7 @@
             <path>
               <item name="Tete" type="1abcf292:AndroidViewProjectNode" />
               <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="manifests" type="f94875db:AndroidManifestsGroupNode" />
-            </path>
-            <path>
-              <item name="Tete" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
               <item name="java" type="edd41e36:AndroidSourceTypeNode" />
-            </path>
-            <path>
-              <item name="Tete" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
-              <item name="tete" type="cbb59c9e:AndroidPsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Tete" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
-              <item name="tete" type="cbb59c9e:AndroidPsiDirectoryNode" />
-              <item name="Main2Activity" type="1a9f42e2:ClassTreeNode" />
-            </path>
-            <path>
-              <item name="Tete" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
-              <item name="tete" type="cbb59c9e:AndroidPsiDirectoryNode" />
-              <item name="MainActivity" type="1a9f42e2:ClassTreeNode" />
-            </path>
-            <path>
-              <item name="Tete" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
-              <item name="tete" type="cbb59c9e:AndroidPsiDirectoryNode" />
-              <item name="MapsActivity" type="1a9f42e2:ClassTreeNode" />
-            </path>
-            <path>
-              <item name="Tete" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
-              <item name="tete" type="cbb59c9e:AndroidPsiDirectoryNode" />
-              <item name="Task1" type="1a9f42e2:ClassTreeNode" />
-            </path>
-            <path>
-              <item name="Tete" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
-              <item name="tete" type="cbb59c9e:AndroidPsiDirectoryNode" />
-              <item name="UnToast" type="1a9f42e2:ClassTreeNode" />
             </path>
             <path>
               <item name="Tete" type="1abcf292:AndroidViewProjectNode" />
@@ -227,7 +157,9 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="ProjectPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -238,7 +170,7 @@
     <property name="android.sdk.path" value="$USER_HOME$/Android/Sdk" />
     <property name="ignore.virus.scanning.warn.message" value="true" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/src/main/res/drawable-mdpi" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Descargas/MedielWalk-master/keepBurning" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Suggestions" />
     <property name="project.structure.proportion" value="0.17" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -247,15 +179,15 @@
     <option name="LAST_EDITED_BUILD_TYPE" value="release" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\svanegas\Desktop\TETE\ProyectoTTV2\ProyectoTTV2\Tete\app\src\main\res\drawable-mdpi" />
-    </key>
     <key name="CreateClassDialog.RecentsKey">
       <recent name="app.centrolactancia.tete" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\svanegas\Desktop\TETE\ProyectoTTV2\ProyectoTTV2\Tete\app\src\main\res\drawable-mdpi" />
       <recent name="C:\Users\svanegas\Desktop\TETE\ProyectoTTV2\ProyectoTTV2\Tete\app\src\main\res\drawable" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\svanegas\Desktop\TETE\ProyectoTTV2\ProyectoTTV2\Tete\app\src\main\res\drawable-mdpi" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -346,11 +278,10 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1001" y="25" width="919" height="1055" extended-state="4" />
-    <editor active="true" />
+    <frame x="83" y="25" width="1837" height="1055" extended-state="6" />
     <layout>
       <window_info id="Captures" order="0" side_tool="true" weight="0.25" />
-      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.09736541" />
+      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.2858738" />
       <window_info id="Structure" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info id="Build Variants" order="4" side_tool="true" />
@@ -363,9 +294,9 @@
       <window_info anchor="bottom" id="TODO" order="2" />
       <window_info anchor="bottom" id="Debug" order="3" />
       <window_info anchor="bottom" id="Terminal" order="4" />
-      <window_info anchor="bottom" id="Event Log" order="5" sideWeight="0.5013423" side_tool="true" weight="0.33002833" />
+      <window_info active="true" anchor="bottom" id="Event Log" order="5" sideWeight="0.5019542" side_tool="true" visible="true" weight="0.17456897" />
       <window_info anchor="bottom" id="Version Control" order="6" />
-      <window_info anchor="bottom" id="Build" order="7" sideWeight="0.4986577" visible="true" weight="0.17672414" />
+      <window_info anchor="bottom" id="Build" order="7" sideWeight="0.49804577" visible="true" weight="0.17456897" />
       <window_info anchor="bottom" id="Find" order="8" sideWeight="0.49932885" weight="0.3286119" />
       <window_info anchor="bottom" id="Android Profiler" order="9" />
       <window_info anchor="right" id="Device File Explorer" order="0" side_tool="true" />
@@ -504,29 +435,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/app/centrolactancia/tete/Main2Activity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="42" column="13" selection-start-line="42" selection-start-column="13" selection-end-line="42" selection-end-column="13" />
-          <folding>
-            <element signature="e#1160#1409#0" expanded="true" />
-            <element signature="e#1408#1409#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/AndroidManifest.xml">
       <provider editor-type-id="android-manifest" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="442">
           <caret line="55" column="62" selection-start-line="55" selection-start-column="62" selection-end-line="55" selection-end-column="62" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="32" selection-start-line="32" selection-end-line="32" />
         </state>
       </provider>
     </entry>
@@ -544,6 +457,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/app/centrolactancia/tete/TaskRegistrer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/res/layout/activity_main3.xml">
       <provider selected="true" editor-type-id="android-designer2" />
       <provider editor-type-id="text-editor">
@@ -552,10 +472,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/app/centrolactancia/tete/HTTPAsyncTask.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="15" selection-start-line="3" selection-start-column="11" selection-end-line="3" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/res/layout/activity_main.xml">
       <provider selected="true" editor-type-id="android-designer2" />
       <provider editor-type-id="text-editor">
-        <state relative-caret-position="300">
+        <state relative-caret-position="840">
           <caret line="56" column="44" selection-start-line="56" selection-start-column="29" selection-end-line="56" selection-end-column="44" />
         </state>
       </provider>
@@ -563,19 +490,29 @@
     <entry file="file://$PROJECT_DIR$/src/main/res/layout/activity_main2.xml">
       <provider selected="true" editor-type-id="android-designer2" />
       <provider editor-type-id="text-editor">
-        <state relative-caret-position="1560">
-          <caret line="104" column="36" selection-start-line="104" selection-start-column="36" selection-end-line="104" selection-end-column="36" />
+        <state relative-caret-position="450">
+          <caret line="30" column="33" selection-start-line="30" selection-start-column="29" selection-end-line="30" selection-end-column="43" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/app/centrolactancia/tete/MainActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="351" column="7" selection-start-line="351" selection-start-column="7" selection-end-line="351" selection-end-column="7" />
-          <folding>
-            <element signature="e#2460#2734#0" expanded="true" />
-            <element signature="e#2733#2734#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="555">
+          <caret line="237" column="59" selection-start-line="237" selection-start-column="58" selection-end-line="237" selection-end-column="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/app/centrolactancia/tete/Main2Activity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="258" selection-start-line="258" selection-end-line="258" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="21" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
         </state>
       </provider>
     </entry>

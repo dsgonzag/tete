@@ -99,11 +99,11 @@ public class MainActivity extends AppCompatActivity {
                     new Task1().execute();
                 }
                 else{
-                    toast.show(this, "¡Error, sin conexión!", Toast.LENGTH_LONG);
+                  //  toast.show(this, "¡Error, sin conexión!", Toast.LENGTH_LONG);
                 }
             }
         }else{
-            toast.show(this, "Complete sus datos", Toast.LENGTH_LONG);
+           // toast.show(this, "Complete sus datos", Toast.LENGTH_LONG);
         }
     }
     private String getFromSharedPreferences(String usuario) {
@@ -276,7 +276,12 @@ public class MainActivity extends AppCompatActivity {
         editor.putString("id", nom_user);
         editor.commit();
     }
-
+    private void saveLoginSharedPreferences() {
+        SharedPreferences sharedPreferences = getSharedPreferences("login_preference",Context.MODE_PRIVATE);
+        SharedPreferences.Editor editor = sharedPreferences.edit();
+        editor.putString("id","");
+        editor.commit();
+    }
 
 
 
