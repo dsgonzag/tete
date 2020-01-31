@@ -81,8 +81,8 @@
             android:paddingLeft="20dp"
             android:paddingRight="10dp"
             android:paddingBottom="10dp"
-            android:password="true"
-            android:textColorHint="#ccc"></EditText>
+            android:password="false"
+            android:textColorHint="#ccc" />
 
 
         <Button
@@ -98,18 +98,6 @@
             android:textColor="#278fec"
             android:textSize="16sp"></Button>
 
-        <Button
-            android:id="@+id/btnSig2"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_gravity="right"
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp"
-            android:layout_marginBottom="5dp"
-            android:background="@drawable/siguiente"
-            android:elevation="5dp"
-            android:textColor="#278fec"
-            android:textSize="16sp"></Button>
         <ProgressBar
             android:id="@+id/pro2"
             style="?android:attr/progressBarStyle"

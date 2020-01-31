@@ -14,7 +14,6 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:fontFamily="sans-serif"
-        android:text="TU PERFIL"
         android:textAlignment="center"
         android:textColor="@color/colorAccent"
         android:textSize="24sp"
@@ -22,10 +21,10 @@
 
     <ImageView
         android:id="@+id/imageView4"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
+        android:layout_width="159dp"
+        android:layout_height="161dp"
         android:layout_gravity="center_horizontal"
-        android:background="@drawable/avartares" />
+        android:background="@drawable/bebelogob" />
 
     <TextView
         android:id="@+id/textView2"

@@ -16,12 +16,23 @@ Button btnS3, btnS4;
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main3);
 
+        btnS3 = (Button) findViewById(R.id.btnDonar);
         btnS4 = (Button) findViewById(R.id.btnSolicitar);
+
         btnS4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent (v.getContext(), Main4Activity.class);
                 startActivityForResult(intent, 0);
+            }
+        });
+
+        btnS3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent (v.getContext(), MapsActivity.class);
+                startActivityForResult(intent, 0);
+
             }
         });
     }

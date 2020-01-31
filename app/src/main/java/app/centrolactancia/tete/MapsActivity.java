@@ -45,51 +45,10 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                 .findFragmentById(R.id.map);
         mapFragment.getMapAsync(this);
 
-        listUbicacion();
-    }
-
-
-
-    public Connection conexionBD(){
-        Connection conexion=null;
-        try {
-            StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder().permitAll().build();
-            StrictMode.setThreadPolicy(policy);
-            Class.forName("net.sourceforge.jtds.jdbc.Driver").newInstance();
-            conexion = DriverManager.getConnection("jdbc:jtds:sqlserver://52.232.165.138;databaseName=Tete;user=Tete;password=tete;");
-
-        }catch(Exception e){
-            Toast.makeText(getApplicationContext(),e.getMessage(), Toast.LENGTH_SHORT).show();
-        }
-        return conexion;
-    }
-
-    public void listUbicacion() {
-        int n;
-
-
-        Integer numColumnas=5;
-
-
-        try {
-
-            PreparedStatement pst = conexionBD().prepareStatement("select TOP(5) Nombre, Lat1, Long1, (3959 * acos(cos(radians(37)) * cos(radians(Lat1)) * cos(radians(Long1)-radians(-79.916539)) + sin (radians(-2.187074))*sin(radians(Lat)))) AS distance FROM Tbl_Ubicacion ORDER BY distance asc");
-            ResultSet rs =pst.executeQuery();
-            //obtentodo los datos y obten un conteo de todas las colummnas
-
-
-            while (rs.next()) {
-
-                        Ubicacion.add(rs.getString("Nombre").toString());//rs.getObject(i).toString();
-                       // Toast.makeText(getApplicationContext(), Ubicacion.get(i), Toast.LENGTH_SHORT).show();
-
-
-            }
-        }catch(Exception e){
-            Toast.makeText(getApplicationContext(),e.getMessage(),Toast.LENGTH_SHORT).show();
-        }
 
     }
+
+
 
     /**
      * Manipulates the map once available.

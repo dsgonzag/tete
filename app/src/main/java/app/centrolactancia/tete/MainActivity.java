@@ -51,7 +51,7 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        btnS1 = (Button) findViewById(R.id.btnSig1);
+      //  btnS1 = (Button) findViewById(R.id.btnSig1);
 
 
         String sesioniciada = getFromSharedPreferencesNull("usuario");
@@ -103,7 +103,7 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
         }else{
-           // toast.show(this, "Complete sus datos", Toast.LENGTH_LONG);
+           //toast.show(this, "Complete sus datos", Toast.LENGTH_LONG);
         }
     }
     private String getFromSharedPreferences(String usuario) {
