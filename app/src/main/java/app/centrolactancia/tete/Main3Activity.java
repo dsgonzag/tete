@@ -11,6 +11,7 @@ import com.example.tete.R;
 
 public class Main3Activity extends AppCompatActivity {
 Button btnS3, btnS4;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

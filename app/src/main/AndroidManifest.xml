@@ -2,26 +2,27 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.tete">
 
+
     <!--
          The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
          Google Maps Android API v2, but you must specify either coarse or fine
          location permissions for the 'MyLocation' functionality.
     -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
 
-    <!-- <uses-permission android:name="android.permission.GET_ACCOUNTS" />  -->
-    <uses-permission android:name="android.permission.READ_PROFILE" />
     <!--
-     <uses-permission android:name="android.permission.READ_CONTACTS" />  -->
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the 'MyLocation' functionality.
+    -->
+    <!-- <uses-permission android:name="android.permission.GET_ACCOUNTS" /> -->
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <!--      <uses-permission android:name="android.permission.READ_CONTACTS" /> -->
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-
-    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <uses-permission android:name="android.permission.WAKE_LOCK" />
-
-
-
 
     <application
         android:allowBackup="true"
@@ -45,14 +46,22 @@
 
         <activity
             android:name="app.centrolactancia.tete.MapsActivity"
-            android:label="@string/title_activity_maps"></activity>
-        <activity android:name="app.centrolactancia.tete.Main4Activity" android:screenOrientation="portrait"
-            android:theme="@style/Theme.AppCompat.NoActionBar"/>
-        <activity android:name="app.centrolactancia.tete.Main3Activity" android:screenOrientation="portrait"
+            android:label="@string/title_activity_maps" />
+        <activity
+            android:name="app.centrolactancia.tete.Main4Activity"
+            android:screenOrientation="portrait"
             android:theme="@style/Theme.AppCompat.NoActionBar" />
-        <activity android:name="app.centrolactancia.tete.Main2Activity" android:screenOrientation="portrait"
+        <activity
+            android:name="app.centrolactancia.tete.Main3Activity"
+            android:screenOrientation="portrait"
             android:theme="@style/Theme.AppCompat.NoActionBar" />
-        <activity android:name="app.centrolactancia.tete.MainActivity" android:screenOrientation="portrait"
+        <activity
+            android:name="app.centrolactancia.tete.Main2Activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name="app.centrolactancia.tete.MainActivity"
+            android:screenOrientation="portrait"
             android:theme="@style/Theme.AppCompat.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -60,7 +69,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
     </application>
 
 </manifest>

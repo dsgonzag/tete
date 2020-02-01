@@ -6,6 +6,8 @@ import androidx.core.content.ContextCompat;
 import androidx.fragment.app.FragmentActivity;
 
 import android.Manifest;
+import android.app.Activity;
+import android.app.Dialog;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.os.Bundle;
@@ -15,10 +17,13 @@ import android.widget.Button;
 import android.widget.Toast;
 
 import com.example.tete.R;
+import com.google.android.gms.common.ConnectionResult;
+import com.google.android.gms.common.GooglePlayServicesUtil;
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
+import com.google.android.gms.maps.model.BitmapDescriptorFactory;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
 
@@ -40,12 +45,20 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_maps);
-        // Obtain the SupportMapFragment and get notified when the map is ready to be used.
+
+       // int status = GooglePlayServicesUtil.isGooglePlayServicesAvailable(getApplicationContext());
+
         SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
                 .findFragmentById(R.id.map);
         mapFragment.getMapAsync(this);
 
+      //  if ( status == ConnectionResult.SUCCESS){
+        // Obtain the SupportMapFragment and get notified when the map is ready to be used.
 
+       // }else{
+         //   Dialog dialog = GooglePlayServicesUtil.getErrorDialog(status,(Activity)getApplicationContext(),10);
+           // dialog.show();
+        //}
     }
 
 
@@ -62,13 +75,14 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     @Override
     public void onMapReady(GoogleMap googleMap) {
         mMap = googleMap;
+        mMap.setMapType(GoogleMap.MAP_TYPE_NORMAL);
 
         // Add a marker in CLINICA MORAN CASSAGNE and move the camera
         LatLng centro1 = new LatLng(-2.1780359,-79.9191023);
-        mMap.addMarker(new MarkerOptions().position(centro1).title("CLINICA MORAN CASSAGNE"));
+        mMap.addMarker(new MarkerOptions().position(centro1).title("CLINICA MORAN CASSAGNE").icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_CYAN)));
         // Add a marker in Centro de salud Ferroviaria and move the camera
         LatLng centro2 = new LatLng(-2.1824151,-79.9092786);
-        mMap.addMarker(new MarkerOptions().position(centro2).title("Centro de salud Ferroviaria"));
+        mMap.addMarker(new MarkerOptions().position(centro2).title("Centro de salud Ferroviaria").icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_CYAN)));
 
         mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(centro1,12));
 
