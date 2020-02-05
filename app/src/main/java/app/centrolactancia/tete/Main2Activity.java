@@ -34,7 +34,6 @@ import android.widget.ImageView;
 import android.widget.ProgressBar;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
-import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.tete.R;
@@ -141,6 +140,7 @@ public class Main2Activity extends AppCompatActivity {
 
         return true;
     }
+
 
     private boolean internetActive() {
         ConnectivityManager active = (ConnectivityManager)getApplicationContext().getSystemService(Context.CONNECTIVITY_SERVICE);

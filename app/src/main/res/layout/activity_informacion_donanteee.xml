@@ -45,7 +45,7 @@
 
         android:text="Mantener las uñas cortas, limpias y sin pintura..
 "
-        android:textAlignment="textStart"
+        android:textAlignment="center"
         android:textAllCaps="false"
 
         android:textSize="18sp"
@@ -59,7 +59,7 @@
 
         android:text="No usar maquillaje, perfume o cremas.
 "
-        android:textAlignment="textStart"
+        android:textAlignment="center"
 
         android:textSize="18sp"
         android:textStyle="bold" />
@@ -71,6 +71,7 @@
         android:layout_margin="5dp"
 
         android:text="No utilizar joyas o artículos personales como anillos, collares o pulseras."
+        android:textAlignment="center"
         android:textSize="18sp"
         android:textStyle="bold" />
 
@@ -81,6 +82,7 @@
         android:layout_margin="5dp"
 
         android:text="Realizar un baño previo."
+        android:textAlignment="center"
         android:textSize="18sp"
         android:textStyle="bold" />
 
@@ -91,6 +93,7 @@
         android:layout_margin="5dp"
 
         android:text="Usar ropa cómoda, holgada que facilite el proceso de extracción de leche."
+        android:textAlignment="center"
         android:textSize="18sp"
         android:textStyle="bold" />
 
@@ -101,6 +104,7 @@
         android:layout_margin="5dp"
 
         android:text="No usar ningún equipo tecnológico como celulares, radios o ipods."
+        android:textAlignment="center"
         android:textSize="18sp"
         android:textStyle="bold" />
 

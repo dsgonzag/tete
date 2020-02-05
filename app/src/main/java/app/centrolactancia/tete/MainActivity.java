@@ -15,9 +15,11 @@ import  java.sql.ResultSet;
 
 
 import android.annotation.SuppressLint;
+import android.content.ContentValues;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.database.sqlite.SQLiteDatabase;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.os.AsyncTask;
@@ -38,6 +40,8 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import app.centrolactancia.tete.Database.clsDatabase;
+
 public class MainActivity extends AppCompatActivity {
 
     EditText edtNombre, edtPass;
@@ -48,7 +52,8 @@ public class MainActivity extends AppCompatActivity {
     private UnToast toast;
     private ProgressBar pro;
     private Button btnValidar;
-
+    private clsDatabase loDatabase;
+    private SQLiteDatabase loExecute;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -60,6 +65,7 @@ public class MainActivity extends AppCompatActivity {
             super.onCreate(savedInstanceState);
             setContentView(R.layout.activity_main);
 
+            loDatabase= new clsDatabase(this);
             user = ( EditText) findViewById(R.id.usuario);
             pass = ( EditText) findViewById(R.id.contraseña);
             pro = (ProgressBar) findViewById(R.id.pro1);
@@ -80,8 +86,6 @@ public class MainActivity extends AppCompatActivity {
 
         });*/
 
-
-
             btnS1.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
@@ -90,22 +94,73 @@ public class MainActivity extends AppCompatActivity {
 
                 }
             });
-
-            btnMap = (Button) findViewById(R.id.btnDonar);
-            btnMap.setOnClickListener(new View.OnClickListener() {
-                public void onClick(View v) {
-                    // Toast.makeText(getApplicationContext(),"BIENVENIDO", Toast.LENGTH_SHORT).show();
-                    Intent intent = new Intent(v.getContext(), MapsActivity.class);
-                    startActivityForResult(intent,0);
-                }
-            });
         }
 
+        lLlenarLugares();
+
     }
+
+    private void lLlenarLugares()
+    {
+        try{
+            loExecute = loDatabase.getWritableDatabase();
+            loExecute.delete("tbListaLocales", null, null);
+            ContentValues values = new ContentValues();
+            values.put("nombre_establecimiento", "Hospital General Guasmo Sur");
+            values.put("direccion", "Avenida Cacique Tomalá");
+            values.put("latitud", -2.278339);
+            values.put("longitud", -79.895838);
+            loExecute.insert("tbListaLocales", null, values);
+
+            values = null;
+            values = new ContentValues();
+            values.put("nombre_establecimiento", "Hospital Universitario");
+            values.put("direccion", "Avenida 43 NO, BODEGAS FERCONSA");
+            values.put("latitud", -2.096141);
+            values.put("longitud", -79.946781);
+            loExecute.insert("tbListaLocales", null, values);
+
+            values = null;
+            values = new ContentValues();
+            values.put("nombre_establecimiento", "Hospital del Niño, Dr Fransisco de Icaza Bustamante");
+            values.put("direccion", "Avenida Quito");
+            values.put("latitud", -2.2032727);
+            values.put("longitud", -79.8953945);
+            loExecute.insert("tbListaLocales", null, values);
+
+            values = null;
+            values = new ContentValues();
+            values.put("nombre_establecimiento", "Hospital del IESS Los Ceibos");
+            values.put("direccion", "Avenida del Bombero");
+            values.put("latitud", -2.1762186);
+            values.put("longitud", -79.9407821);
+            loExecute.insert("tbListaLocales", null, values);
+
+            values = null;
+            values = new ContentValues();
+            values.put("nombre_establecimiento", "Hospital de Niños Dr. Roberto Gilbert E.");
+            values.put("direccion", "Avenida Roberto Gilbert y, Nicasio Safadi");
+            values.put("latitud", -2.1778518);
+            values.put("longitud", -79.8850402);
+            loExecute.insert("tbListaLocales", null, values);
+
+            values = null;
+            values = new ContentValues();
+            values.put("nombre_establecimiento", "Hospital De Niños Leon Becerra");
+            values.put("direccion", "Eloy Alfaro y, Bolivia");
+            values.put("latitud", -2.1289721);
+            values.put("longitud", -79.9645355);
+            loExecute.insert("tbListaLocales", null, values);
+
+        }catch (Exception ex)
+        {
+            Toast.makeText(MainActivity.this,"Error al momento de llenar los lugares en el metodo lLlenarLugares()",Toast.LENGTH_LONG).show();
+        }
+    }
+
     public void logear(View v){
         boolean camposLlenos= fullFields();
         boolean internetEnabled = internetActive();
-
         if(!user.getText().toString().isEmpty() && !pass .getText().toString().isEmpty()){
             if(camposLlenos){
                 if(internetEnabled){
@@ -118,7 +173,6 @@ public class MainActivity extends AppCompatActivity {
         }else{
            // toast.show(this, "Complete sus datos", Toast.LENGTH_LONG);
         }
-
     }
     private String getFromSharedPreferences(String usuario) {
         SharedPreferences sharedPre = getPreferences(Context.MODE_PRIVATE);
@@ -209,9 +263,7 @@ public class MainActivity extends AppCompatActivity {
                 pro.setVisibility(View.INVISIBLE);
                 btnValidar.setEnabled(true);
                 Intent intent= new Intent(MainActivity.this, Main3Activity.class);
-
                 intent.putExtra("usuario", user.getText()+ "");
-
                 startActivity(intent);
             }
 
@@ -324,8 +376,14 @@ public class MainActivity extends AppCompatActivity {
     });*/
 
 
-
-
+/*
+       btnMap.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                // Toast.makeText(getApplicationContext(),"BIENVENIDO", Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(v.getContext(), MapsActivity.class);
+                startActivityForResult(intent,0);
+            }
+        });*/
 
     /*public void btnReg(View v){
 

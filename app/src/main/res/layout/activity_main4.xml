@@ -35,11 +35,12 @@
         android:id="@+id/textView5"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_margin="5dp"
         android:layout_marginBottom="10dp"
         android:text="La leche dispensada en los bancos de leche en el Ecuador, está orientada a la alimentación de los recién nacidos prematuros y en ocaciones a bebés con patologías digestivas o renales, por lo tanto es necesario garantizar la óptima alimentación los primeros meses de vida."
         android:textAlignment="center"
         android:textColor="@color/black"
-        android:textSize="14sp" />
+        android:textSize="18sp" />
 
 
     <TextView
@@ -56,11 +57,12 @@
         android:id="@+id/textView6"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_margin="5dp"
         android:text="Próximamente desarrollarmos esta opción, para benificio de madres que tienen problemas en la producción de leche.
 "
         android:textAlignment="center"
         android:textColor="@color/black"
-        android:textSize="14sp" />
+        android:textSize="18sp" />
 
     <TextView
         android:id="@+id/textView8"
@@ -72,4 +74,6 @@
         android:textColor="@color/colorPrimary"
         android:textSize="18sp"
         android:textStyle="bold" />
+
+
 </LinearLayout>

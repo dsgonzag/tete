@@ -24,6 +24,5 @@ public class InformacionDonante extends AppCompatActivity {
                 startActivityForResult(intent, 0);
             }
         });
-
     }
 }
