@@ -27,30 +27,20 @@
 
     <ImageView
         android:id="@+id/imageView4"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
         android:layout_gravity="center_horizontal"
         android:background="@drawable/bebelogob" />
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/User"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="2dp"
-        android:text="Usuario"
         android:textAlignment="center"
-        android:textColor="@color/common_google_signin_btn_text_light_focused"
-        android:textSize="14sp" />
-
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="5dp"
-        android:text="Correo"
-        android:textAlignment="center"
-        android:textColor="@color/common_google_signin_btn_text_light_default"
-        android:textSize="14sp" />
+        android:textColor="@color/colorPrimary"
+        android:textSize="24sp"
+        android:textStyle="bold|italic" />
 
 
     <View
@@ -73,11 +63,6 @@
         android:layout_marginBottom="15dp"
         android:background="@drawable/botondonar"
         android:editable="false" />
-
-    <TextView
-        android:id="@+id/textView12"
-        android:layout_width="match_parent"
-        android:layout_height="20dp" />
 
     <Button
         android:id="@+id/btnSolicitar"

@@ -34,6 +34,7 @@ import android.widget.ImageView;
 import android.widget.ProgressBar;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.tete.R;
@@ -85,7 +86,7 @@ public class Main2Activity extends AppCompatActivity {
         boolean internetEnabled = internetActive();
 
         //  Intent intent= new Intent(this, MainActivity.class);
-        if (!edtUsuarioR.getText().toString().isEmpty() && !edtContraseñaR.getText().toString().isEmpty() && !edtNombreR.getText().toString().isEmpty() && !edtCorreoR.getText().toString().isEmpty()){
+        if (edtUsuarioR.getText().toString().isEmpty() && edtContraseñaR.getText().toString().isEmpty() && edtNombreR.getText().toString().isEmpty() && edtCorreoR.getText().toString().isEmpty()){
             toast.show(this, "Faltan datos por completar", Toast.LENGTH_LONG);
     } else if(camposLlenos){//comprobar que ningun campo este vacio
             if(internetEnabled){//comprobar que este conectado a internet
@@ -104,10 +105,10 @@ public class Main2Activity extends AppCompatActivity {
 
     private boolean fullFields() {
 
-        String name = edtUsuarioR.getText().toString().trim();
+        String name = edtNombreR.getText().toString().trim();
         String email = edtCorreoR.getText().toString().trim();
         String password = edtContraseñaR.getText().toString().trim();
-        String user = edtNombreR.getText().toString().trim();
+        String user = edtUsuarioR.getText().toString().trim();
 
         if(TextUtils.isEmpty(name)){
             Toast.makeText(Main2Activity.this,"¡Upps no ingresaste tu nombre!", LENGTH_LONG).show();
@@ -140,7 +141,6 @@ public class Main2Activity extends AppCompatActivity {
 
         return true;
     }
-
 
     private boolean internetActive() {
         ConnectivityManager active = (ConnectivityManager)getApplicationContext().getSystemService(Context.CONNECTIVITY_SERVICE);

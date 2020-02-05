@@ -49,6 +49,7 @@ public class MainActivity extends AppCompatActivity {
     private ProgressBar pro;
     private Button btnValidar;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
@@ -79,6 +80,8 @@ public class MainActivity extends AppCompatActivity {
 
         });*/
 
+
+
             btnS1.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
@@ -87,12 +90,22 @@ public class MainActivity extends AppCompatActivity {
 
                 }
             });
+
+            btnMap = (Button) findViewById(R.id.btnDonar);
+            btnMap.setOnClickListener(new View.OnClickListener() {
+                public void onClick(View v) {
+                    // Toast.makeText(getApplicationContext(),"BIENVENIDO", Toast.LENGTH_SHORT).show();
+                    Intent intent = new Intent(v.getContext(), MapsActivity.class);
+                    startActivityForResult(intent,0);
+                }
+            });
         }
 
     }
     public void logear(View v){
         boolean camposLlenos= fullFields();
         boolean internetEnabled = internetActive();
+
         if(!user.getText().toString().isEmpty() && !pass .getText().toString().isEmpty()){
             if(camposLlenos){
                 if(internetEnabled){
@@ -105,6 +118,7 @@ public class MainActivity extends AppCompatActivity {
         }else{
            // toast.show(this, "Complete sus datos", Toast.LENGTH_LONG);
         }
+
     }
     private String getFromSharedPreferences(String usuario) {
         SharedPreferences sharedPre = getPreferences(Context.MODE_PRIVATE);
@@ -195,6 +209,8 @@ public class MainActivity extends AppCompatActivity {
                 pro.setVisibility(View.INVISIBLE);
                 btnValidar.setEnabled(true);
                 Intent intent= new Intent(MainActivity.this, Main3Activity.class);
+
+                intent.putExtra("usuario", user.getText()+ "");
 
                 startActivity(intent);
             }
@@ -308,14 +324,8 @@ public class MainActivity extends AppCompatActivity {
     });*/
 
 
-/*
-       btnMap.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
-                // Toast.makeText(getApplicationContext(),"BIENVENIDO", Toast.LENGTH_SHORT).show();
-                Intent intent = new Intent(v.getContext(), MapsActivity.class);
-                startActivityForResult(intent,0);
-            }
-        });*/
+
+
 
     /*public void btnReg(View v){
 
